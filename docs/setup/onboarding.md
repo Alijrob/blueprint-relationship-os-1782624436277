@@ -72,13 +72,20 @@ None. The system has no runtime and no secrets.
 
 ## Current phase
 
-Phases 1 and 2 are complete. Phase 1 built the `RelationshipOS/` directory tree
+Phases 1 through 3 are complete. Phase 1 built the `RelationshipOS/` directory tree
 (Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md`. Phase 2
 authored `RelationshipOS/Assistant_Instructions.md`, which holds the runnable master system
 prompt (the "You are my Relationship Memory Assistant" block), all seven safety boundaries,
 and the eight memory-structuring fields (Person, Category, Memory, Source, Date, Confidence,
-Sensitivity, Visibility). Phase 3 (Profile Template and Memory Log) is up next. See the
-tracker.
+Sensitivity, Visibility). Phase 3 authored `RelationshipOS/Templates/Profile_Template.md`, the
+11-section profile template (Basic Information; Preferences; Dislikes; Gift Ideas;
+Communication Style; Relationship Notes; Goals; Health and Wellness; Dates and Events;
+Boundaries; AI Instructions), with a strictly non-clinical Health and Wellness section, and
+`RelationshipOS/Logs/Memory_Update_Log.md`, the 8-column source-tagged memory log (Person,
+Category, Memory, Source, Date, Confidence, Sensitivity, Visibility) with enum guidance
+(Confidence High/Medium/Low; Sensitivity Normal/Sensitive/Highly Sensitive; Visibility
+Private/Shared/Suggested/Archived). Phase 4 (Privacy Model and Data Schema) is up next. See
+the tracker.
 
 ## Known blockers
 
@@ -86,9 +93,11 @@ None.
 
 ## Next likely step
 
-Build Phase 3: author `Templates/Profile_Template.md` (the 11-section profile template) and
-`Logs/Memory_Update_Log.md` (the 8-column source-tagged memory log), keeping the field
-enums aligned with Assistant_Instructions.md.
+Build Phase 4: author `Templates/Privacy_Visibility_Model.md` and
+`Templates/Data_Model_Schema.md` as plain Markdown (no code), keeping enums consistent with
+the memory log. Note the two Visibility enum sets still need reconciliation: the memory log
+uses Private/Shared/Suggested/Archived (per the Phase 3 contract) while
+`Assistant_Instructions.md` lists Private/Partner-Shared/Shared.
 
 ## Hard rules for every phase
 
