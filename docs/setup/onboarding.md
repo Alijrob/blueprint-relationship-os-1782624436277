@@ -72,9 +72,13 @@ None. The system has no runtime and no secrets.
 
 ## Current phase
 
-Phase 1 (Repo skeleton and README) is complete: the `RelationshipOS/` directory tree
-(Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md` exist.
-Phase 2 (Assistant Instructions and MVP Prompt) is up next. See the tracker.
+Phases 1 and 2 are complete. Phase 1 built the `RelationshipOS/` directory tree
+(Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md`. Phase 2
+authored `RelationshipOS/Assistant_Instructions.md`, which holds the runnable master system
+prompt (the "You are my Relationship Memory Assistant" block), all seven safety boundaries,
+and the eight memory-structuring fields (Person, Category, Memory, Source, Date, Confidence,
+Sensitivity, Visibility). Phase 3 (Profile Template and Memory Log) is up next. See the
+tracker.
 
 ## Known blockers
 
@@ -82,8 +86,9 @@ None.
 
 ## Next likely step
 
-Build Phase 2: author `RelationshipOS/Assistant_Instructions.md` with the runnable MVP
-system prompt and all seven safety boundaries.
+Build Phase 3: author `Templates/Profile_Template.md` (the 11-section profile template) and
+`Logs/Memory_Update_Log.md` (the 8-column source-tagged memory log), keeping the field
+enums aligned with Assistant_Instructions.md.
 
 ## Hard rules for every phase
 
