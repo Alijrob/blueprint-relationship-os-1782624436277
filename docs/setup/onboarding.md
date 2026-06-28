@@ -72,7 +72,9 @@ None. The system has no runtime and no secrets.
 
 ## Current phase
 
-Phase 1 (Repo skeleton and README) is up next. See the tracker.
+Phase 1 (Repo skeleton and README) is complete: the `RelationshipOS/` directory tree
+(Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md` exist.
+Phase 2 (Assistant Instructions and MVP Prompt) is up next. See the tracker.
 
 ## Known blockers
 
@@ -80,7 +82,8 @@ None.
 
 ## Next likely step
 
-Build Phase 1: create the `RelationshipOS/` directory tree and the top-level README.
+Build Phase 2: author `RelationshipOS/Assistant_Instructions.md` with the runnable MVP
+system prompt and all seven safety boundaries.
 
 ## Hard rules for every phase
 
