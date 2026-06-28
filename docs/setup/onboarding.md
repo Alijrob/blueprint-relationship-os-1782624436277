@@ -72,7 +72,7 @@ None. The system has no runtime and no secrets.
 
 ## Current phase
 
-Phases 1 through 3 are complete. Phase 1 built the `RelationshipOS/` directory tree
+Phases 1 through 4 are complete. Phase 1 built the `RelationshipOS/` directory tree
 (Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md`. Phase 2
 authored `RelationshipOS/Assistant_Instructions.md`, which holds the runnable master system
 prompt (the "You are my Relationship Memory Assistant" block), all seven safety boundaries,
@@ -84,8 +84,14 @@ Boundaries; AI Instructions), with a strictly non-clinical Health and Wellness s
 `RelationshipOS/Logs/Memory_Update_Log.md`, the 8-column source-tagged memory log (Person,
 Category, Memory, Source, Date, Confidence, Sensitivity, Visibility) with enum guidance
 (Confidence High/Medium/Low; Sensitivity Normal/Sensitive/Highly Sensitive; Visibility
-Private/Shared/Suggested/Archived). Phase 4 (Privacy Model and Data Schema) is up next. See
-the tracker.
+Private/Shared/Suggested/Archived). Phase 4 authored
+`RelationshipOS/Templates/Privacy_Visibility_Model.md` (the Sensitivity values
+Normal/Sensitive/Highly Sensitive, the four Visibility values
+Private/Shared/Suggested/Archived, partner-controlled sharing, and opt-in shared wellness
+context framed respectfully) and `RelationshipOS/Templates/Data_Model_Schema.md` (the
+future-app schema as Markdown tables for six entities: Person, Memory, Category, Visibility,
+Sensitivity, Source, with enums matching the memory log and Category names matching the
+profile template). Phase 5 (Workflow Templates) is up next. See the tracker.
 
 ## Known blockers
 
@@ -93,11 +99,12 @@ None.
 
 ## Next likely step
 
-Build Phase 4: author `Templates/Privacy_Visibility_Model.md` and
-`Templates/Data_Model_Schema.md` as plain Markdown (no code), keeping enums consistent with
-the memory log. Note the two Visibility enum sets still need reconciliation: the memory log
-uses Private/Shared/Suggested/Archived (per the Phase 3 contract) while
-`Assistant_Instructions.md` lists Private/Partner-Shared/Shared.
+Build Phase 5: author the five workflow templates (Gift_Planner, Date_Planner, Conflict_Prep,
+Memory_Update, Retrieval) under `Templates/` as plain-Markdown prompts that reference the
+safety boundaries, with Memory_Update output matching the 8-column log shape. Note the two
+Visibility enum sets still need reconciliation: the memory log and the new schema use
+Private/Shared/Suggested/Archived (per the frozen contracts) while `Assistant_Instructions.md`
+still lists Private/Partner-Shared/Shared.
 
 ## Hard rules for every phase
 
