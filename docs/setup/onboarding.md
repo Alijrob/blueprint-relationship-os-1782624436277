@@ -72,7 +72,7 @@ None. The system has no runtime and no secrets.
 
 ## Current phase
 
-Phases 1 through 4 are complete. Phase 1 built the `RelationshipOS/` directory tree
+Phases 1 through 5 are complete. Phase 1 built the `RelationshipOS/` directory tree
 (Relationships/, Templates/, Logs/) and the top-level `RelationshipOS/README.md`. Phase 2
 authored `RelationshipOS/Assistant_Instructions.md`, which holds the runnable master system
 prompt (the "You are my Relationship Memory Assistant" block), all seven safety boundaries,
@@ -91,7 +91,19 @@ Private/Shared/Suggested/Archived, partner-controlled sharing, and opt-in shared
 context framed respectfully) and `RelationshipOS/Templates/Data_Model_Schema.md` (the
 future-app schema as Markdown tables for six entities: Person, Memory, Category, Visibility,
 Sensitivity, Source, with enums matching the memory log and Category names matching the
-profile template). Phase 5 (Workflow Templates) is up next. See the tracker.
+profile template). Phase 5 authored the five workflow templates under
+`RelationshipOS/Templates/` (`Gift_Planner.md`, `Date_Planner.md`, `Conflict_Prep.md`,
+`Memory_Update.md`, `Retrieval.md`). Each is an executable Markdown prompt the user pastes into
+any standard LLM alongside the master system prompt and a person's profile: Gift_Planner assesses
+past hints, preferences, and dislikes to propose thoughtful gift ideas; Date_Planner designs
+outings from preferences, schedule, and boundaries; Conflict_Prep prepares for difficult
+conversations neutrally, forbids guessing emotional states or asserting assumptions as fact, and
+recommends communicating directly with the person; Memory_Update parses unstructured input into
+the exact 8-column log row shape (Person, Category, Memory, Source, Date, Confidence, Sensitivity,
+Visibility); and Retrieval queries the profile and log and flags uncertainty when data is missing,
+unclear, or conflicting. Every workflow restates the seven safety boundaries and points back to
+`Assistant_Instructions.md`. Phase 6 (Example Profile and Final Validation Sweep) is up next. See
+the tracker.
 
 ## Known blockers
 
@@ -99,10 +111,10 @@ None.
 
 ## Next likely step
 
-Build Phase 5: author the five workflow templates (Gift_Planner, Date_Planner, Conflict_Prep,
-Memory_Update, Retrieval) under `Templates/` as plain-Markdown prompts that reference the
-safety boundaries, with Memory_Update output matching the 8-column log shape. Note the two
-Visibility enum sets still need reconciliation: the memory log and the new schema use
+Build Phase 6: populate `Relationships/Example_Person.md` fully (all 11 sections, non-clinical
+Health and Wellness) and run the final validation sweep (repo-wide em-dash check empty, enums
+consistent across template, log, schema, example, directory tree matches the Component Roster).
+Note the two Visibility enum sets still need reconciliation: the memory log and the schema use
 Private/Shared/Suggested/Archived (per the frozen contracts) while `Assistant_Instructions.md`
 still lists Private/Partner-Shared/Shared.
 
