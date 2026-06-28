@@ -31,4 +31,10 @@ Confidence, Sensitivity, Visibility.
 
 | Person | Category | Memory | Source | Date | Confidence | Sensitivity | Visibility |
 |--------|----------|--------|--------|------|------------|-------------|------------|
-| Example Person | Preference | Loves dark chocolate, dislikes milk chocolate | told me directly | 2026-06-20 | High | Normal | Shared |
+| Maya Reyes | Preference | Loves dark chocolate, dislikes milk chocolate | told me directly | 2026-06-20 | High | Normal | Shared |
+| Maya Reyes | Important Date | Birthday is March 14 | told me directly | 2026-06-20 | High | Normal | Shared |
+| Maya Reyes | Gift Idea | Wants new Altra trail running shoes, US 8 womens, wide toe box | told me directly | 2026-06-21 | High | Normal | Suggested |
+| Maya Reyes | Health and Wellness | Mostly vegetarian, eats fish occasionally, prefers lighter evening meals | told me directly | 2026-06-21 | High | Normal | Shared |
+| Maya Reyes | Shared History | First date was a tide pool walk at Cannon Beach | observed | 2026-06-21 | High | Normal | Shared |
+| Maya Reyes | Important Date | Mid-November anniversary of her grandmother's passing; keep the day quiet | told me directly | 2026-06-21 | High | Sensitive | Private |
+| Maya Reyes | Work | Weighing a bigger role at work; keep private until she decides | told me directly | 2026-06-22 | Medium | Sensitive | Private |

@@ -102,8 +102,15 @@ recommends communicating directly with the person; Memory_Update parses unstruct
 the exact 8-column log row shape (Person, Category, Memory, Source, Date, Confidence, Sensitivity,
 Visibility); and Retrieval queries the profile and log and flags uncertainty when data is missing,
 unclear, or conflicting. Every workflow restates the seven safety boundaries and points back to
-`Assistant_Instructions.md`. Phase 6 (Example Profile and Final Validation Sweep) is up next. See
-the tracker.
+`Assistant_Instructions.md`. Phase 6 (Example Profile and Final Validation Sweep) is complete: it
+added the fully populated, non-clinical worked example `Relationships/Example_Person.md` (all 11
+template sections in order), seeded matching example rows into `Logs/Memory_Update_Log.md`, gave
+`README.md` a final pass, removed the redundant `.gitkeep` placeholders so the directory tree
+matches the Component Roster exactly, and ran the final validation sweep (repo-wide em-dash sweep
+empty; Confidence/Sensitivity/Visibility enums canonical across template, log, schema, and
+example).
+
+**Current phase: complete. All six phases are done and the markdown MVP build is finished.**
 
 ## Known blockers
 

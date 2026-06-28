@@ -24,12 +24,12 @@ Relationship OS is a private, portable, AI-assisted relationship memory system: 
 ```
 RelationshipOS/
   README.md            This file: positioning and how to use the system.
-  Relationships/       One Markdown profile per person (filled in later phases).
+  Relationships/       One Markdown profile per person (see Example_Person.md for a worked example).
   Templates/           Reusable profile and workflow prompt templates.
   Logs/                Append-only memory logs that record what changed and when.
 ```
 
-- `Relationships/` holds an individual profile file for each person you track.
+- `Relationships/` holds an individual profile file for each person you track. `Example_Person.md` is a complete, non-clinical worked example you can read before starting your own.
 - `Templates/` holds the profile template plus the workflow prompts (gift planning, date planning, conflict prep, memory updates, and retrieval) and the supporting privacy model and data schema.
 - `Logs/` holds the source-tagged memory update log so every saved detail has a record of where it came from and when.
 
